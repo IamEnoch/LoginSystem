@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100">
+
+    <TextView
+		android:id="@+id/create_account_textview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="Create An Account"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+		android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:layout_marginHorizontal="20dp"
+        android:text="Sign In"
+        android:textSize="15sp"/>
+
+    <TextView
+		android:id="@+id/or_textview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="15"
+        android:text="or"
+		android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"/>
+
+    <Button
+	    android:id="@+id/sign_up_button"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="15"
+	    android:layout_marginHorizontal="20dp"
+	    android:text="Sign Up With Email"
+	    android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35">
+
+	    <ProgressBar
+	        android:id="@+id/progressBar_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+			android:layout_centerInParent="true"
+	        android:indeterminate="true" />
+
+    </RelativeLayout>
+</LinearLayout>
